@@ -17,7 +17,7 @@ public interface WzimBoundedQueue<E> {
 
     //public E element();
 
-    //public E peek();
+    public E peek();
 
     /**
      *

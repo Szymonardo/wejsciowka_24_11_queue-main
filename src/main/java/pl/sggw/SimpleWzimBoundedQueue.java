@@ -15,7 +15,8 @@ public class SimpleWzimBoundedQueue<E> implements WzimBoundedQueue<E> {
             return false;
         else
         {
-
+            tablica[size]=e;
+            size++;
         }
         return true;
     }
@@ -31,6 +32,13 @@ public class SimpleWzimBoundedQueue<E> implements WzimBoundedQueue<E> {
         SimpleWzimBoundedQueue<String> kolejka = new SimpleWzimBoundedQueue<String>(maxCapacity);
 
         System.out.println(kolejka.capacity());
+    }
+
+    public E peek()
+    {
+        if(size == 0)
+            return null;
+        return (E)tablica[0];
     }
 
     @Override
